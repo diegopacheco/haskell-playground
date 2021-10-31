@@ -11,6 +11,10 @@ main = do
     let result2 = [fizzbuzz2 x | x <- [1..n]]
     putStrLn ("\n" ++ show result2)
 
+    putStr ("Generating Fizz-Buzz v3 up to  " ++ num)
+    let result3 = [fizzbuzz3 x | x <- [1..n]]
+    putStrLn ("\n" ++ show result3)
+
 -- V1 - Impl with Pattern Matching and case of expression
 fizzbuzz :: (Integral a, Show a) => a -> [Char]
 fizzbuzz n = case (mod n 3, mod n 5) of
@@ -29,3 +33,11 @@ fizzbuzz2 n
     where fizz = mod n 3 == 0
           buzz = mod n 5 == 0
           fizzBuzz = mod n 15 == 0
+
+-- V3 - Impl with Pattern Matching and Guards (no Where)
+fizzbuzz3 :: (Integral a, Show a) => a -> [Char]
+fizzbuzz3 n 
+    | mod n 15 == 0 = "FizzBuzz"
+    | mod n 3  == 0 = "Fizz"
+    | mod n 5  == 0 = "Buzz"
+    | otherwise = show n
