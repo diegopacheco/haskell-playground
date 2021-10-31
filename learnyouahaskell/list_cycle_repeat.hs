@@ -1,5 +1,5 @@
 -- Play with lists and haskell and several functions such as 
--- cycle and repeat
+-- cycle and repeat and replicate
 main = do 
     let list  = [1,2,3]
     putStrLn("list   == " ++ show list)
@@ -9,3 +9,6 @@ main = do
 
     let batman = take 31 (cycle "NaN ")
     putStrLn("Batman! " ++ show batman ++ " Batman!")
+
+    let joker = replicate 7 "HAHA "
+    putStrLn("Joker " ++ show joker)
