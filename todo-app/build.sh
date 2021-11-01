@@ -1,3 +1,4 @@
 #!/bin/bash
 
-ghc --make todo -odir target/ -hidir target/
+mkdir target/
+ghc --make todo -odir target/ -hidir target/ -o target/todo  
