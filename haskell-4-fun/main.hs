@@ -19,3 +19,7 @@ result7 = head [1,2,3,4,5]
 result8 = tail [1,2,4,5,6]
 
 result9 = last [1,2,4,5,6]
+
+factorial :: (Integral a) => a -> a  
+factorial 0 = 1
+factorial n = n * factorial (n - 1)
