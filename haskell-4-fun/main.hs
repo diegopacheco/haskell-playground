@@ -30,3 +30,9 @@ xs = [ a+b | (a,b) <- x1 ]
 myhead :: [a] -> a  
 myhead [] = error "Empty"
 myhead (x:_) = x
+
+myRepeatTake :: a -> Int -> [a]
+myRepeatTake x n = take n $ myRepeat x
+
+myRepeat :: x -> [x]
+myRepeat x = x:myRepeat x
