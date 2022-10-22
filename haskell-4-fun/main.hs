@@ -26,3 +26,7 @@ factorial n = n * factorial (n - 1)
 
 x1 = [(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)]
 xs = [ a+b | (a,b) <- x1 ]
+
+myhead :: [a] -> a  
+myhead [] = error "Empty"
+myhead (x:_) = x
