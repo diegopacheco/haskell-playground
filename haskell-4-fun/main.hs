@@ -23,3 +23,6 @@ result9 = last [1,2,4,5,6]
 factorial :: (Integral a) => a -> a  
 factorial 0 = 1
 factorial n = n * factorial (n - 1)
+
+x1 = [(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)]
+xs = [ a+b | (a,b) <- x1 ]
