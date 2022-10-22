@@ -1,5 +1,7 @@
 addOne x = 1 + x
 
+result0 = sum [1,2,3,4,5,6]
+
 result1 = map (\x -> 2+x) [1,2,3,4,5,6]
 
 result2 = filter (\x -> x>=2) (map addOne [1,2,3])
