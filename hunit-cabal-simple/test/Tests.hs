@@ -1,11 +1,11 @@
 import Test.HUnit ( assertEqual, runTestTT, Counts, Test(..), assertBool )
 import Add(addOne)
 
-test1 :: Test
-test1 = TestCase (assertEqual "test" 2 (addOne 1))
+testAddOne :: Test
+testAddOne = TestCase (assertEqual [] 42 (addOne 41))
 
 tests :: Test
-tests = TestList [TestLabel "test1" test1]
+tests = TestList [TestLabel "testAddOne" testAddOne]
 
 main :: IO Counts
 main = do
