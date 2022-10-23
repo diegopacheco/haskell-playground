@@ -1,4 +1,5 @@
-import Test.HUnit ( assertEqual, runTestTT, Counts, Test(..), assertBool )
+{-# OPTIONS_GHC -Wno-type-defaults #-}
+import Test.HUnit ( assertEqual, runTestTT, Counts, Test(..))
 import Add(addOne)
 
 testAddOne :: Test
