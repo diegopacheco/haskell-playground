@@ -14,6 +14,9 @@ digit = isDigit '9'
 useful :: [String]
 useful = words "hey guys its me"
 
+lookAtMe :: [GeneralCategory]
+lookAtMe = [generalCategory ' ', generalCategory 'A', generalCategory '9', generalCategory '.']
+
 main :: IO ()
 main = do
     print ("is this all alphanum?  " ++ show cool)
@@ -21,3 +24,4 @@ main = do
     print ("is A UPPER ?  " ++ show up)
     print ("is 9 digit ?  " ++ show digit)
     print useful
+    print lookAtMe
