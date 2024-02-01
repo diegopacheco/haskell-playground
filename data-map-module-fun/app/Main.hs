@@ -1,5 +1,6 @@
 module Main where
 import qualified Data.List.NonEmpty as Map
+import qualified Control.Applicative as Map
 
 phoneBook :: [(String, String)]
 phoneBook = 
