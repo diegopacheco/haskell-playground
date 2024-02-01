@@ -11,9 +11,13 @@ up = isUpper 'A'
 digit :: Bool
 digit = isDigit '9'
 
+useful :: [String]
+useful = words "hey guys its me"
+
 main :: IO ()
 main = do
     print ("is this all alphanum?  " ++ show cool)
     print ("is this all alphanum?  " ++ show (all isAlphaNum "bobby283@#"))
     print ("is A UPPER ?  " ++ show up)
     print ("is 9 digit ?  " ++ show digit)
+    print useful
