@@ -17,6 +17,9 @@ cool = intersperse '.' "DRE"
 concatFun :: [Char]
 concatFun = concat ["easy","peasy","lemon","sequeeze"]
 
+funWithMap :: [Integer]
+funWithMap = concatMap (replicate 4) [1..3]
+
 main :: IO ()
 main = do
     let nums = [1, 2, 2, 2, 3, 5, 1, 1, 1]
@@ -26,3 +29,4 @@ main = do
     print cool
     print join
     print concatFun
+    print funWithMap
