@@ -1,0 +1,3 @@
+Haskell is a pureley functional programing language.
+First impression might be scrary but in the end is pretty visionary.
+Lots of languages copied haskell.
